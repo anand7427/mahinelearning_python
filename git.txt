@@ -1,0 +1,46 @@
+$ git init
+$ git add .
+# Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+$ git commit -m "First commit"
+# Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+
+$ git remote add origin remote repository URL
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+
+
+$ git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+
+=========
+if push is not accepted than try this ONLY
+
+git push -f "https://github.com/rohailkhan/USA_elections_alalysis"
+
+git push -f "https://github.com/rohailkhan/mahinelearning_python"
+
+
+===================================================================================
+or u can try
+
+git pull <remote> master:dev 
+will fetch the remote/master branch and merge it into your local/dev branch.
+
+git pull <remote> dev will fetch the remote/dev branch, and merge it into your current branch.
+
+===============
+
+Try deleting index.lock file in your .git directory if u get a message that another git is running
+
+rm -f .git/index.lock
+
+
+git add "E:\a machine learning course with python UDEMY\1 Linear & Polynomial Regression\Housing Price Analysis.ipynb"
+
+
+
+
